@@ -22,8 +22,7 @@ export const textVariant = (delay?:number) => {
     };
   };
   
-  export const fadeIn = (params: IMotion) => {
-    const {direction, type, delay, duration} = params
+  export const fadeIn = (direction:string, type:string, delay:number, duration:number) => {
     return {
       hidden: {
         x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
