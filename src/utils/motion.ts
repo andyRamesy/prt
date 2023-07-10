@@ -62,11 +62,10 @@ export const textVariant = (delay?:number) => {
     };
   };
   
-  export const slideIn = (params: IMotion) => {
-    const {direction, type, delay, duration} = params
+  export const slideIn = (direction:string, type:string, delay:number, duration:number) => {
     return {
       hidden: {
-        x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
+        x: direction === "ledirection, type, delay, durationft" ? "-100%" : direction === "right" ? "100%" : 0,
         y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
       },
       show: {
