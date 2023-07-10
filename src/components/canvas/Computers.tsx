@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
@@ -10,7 +10,7 @@ const Computers = ({ isMobile }: any) => {
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intesity={0.2} />
+      <pointLight intensity={0.2} />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
