@@ -62,10 +62,10 @@ export const textVariant = (delay?:number) => {
     };
   };
   
-  export const slideIn = (direction:string, type:string, delay:number, duration:number) => {
+  export const slideIn = (direction:any, type:any, delay:any, duration:any) => {
     return {
       hidden: {
-        x: direction === "ledirection, type, delay, durationft" ? "-100%" : direction === "right" ? "100%" : 0,
+        x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
         y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
       },
       show: {
@@ -80,6 +80,7 @@ export const textVariant = (delay?:number) => {
       },
     };
   };
+  
   
   export const staggerContainer = (staggerChildren?:any, delayChildren?:number) => {
     return {
