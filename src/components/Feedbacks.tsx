@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import { motion, spring } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
@@ -42,7 +40,6 @@ const FeedbackCard = ({
     </motion.div>
   );
 };
->>>>>>> 1836bf8a5f4a3dd522da4e5aa0537ff60a80fe65
 
 const Feedbacks = () => {
   return (
