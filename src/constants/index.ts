@@ -23,6 +23,10 @@ import {
   jobit,
   tripguide,
   threejs,
+  react,
+  vue,
+  flutter,
+  node,
 } from "../assets/index";
 
 export const navLinks = [
@@ -42,20 +46,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "React Developer",
+    icon: react,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Vue Developer",
+    icon: vue,
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    icon: node,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Flutter",
+    icon: flutter,
   },
 ];
 
@@ -116,16 +120,19 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Restaurant Management System project",
+    company_name: "License defense project",
+    icon: null,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "March 2021 - April 2021",
+    // points: [
+    //   "Developing and maintaining web applications using React.js and other related technologies.",
+    //   "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //   "Implementing responsive design and ensuring cross-browser compatibility.",
+    //   "Participating in code reviews and providing constructive feedback to other developers.",
+    // ],
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing mobile application using React Native for the front end and Node js as the back end",
     ],
   },
   {

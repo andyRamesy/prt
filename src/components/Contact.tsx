@@ -21,10 +21,37 @@ const Contact = () => {
 
   const handleChange = (e: any) => {
     console.log("form:", form);
-    const {name, value} = e.target
-    setForm({...form, [name] : value})
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
   };
-  const handleSubmit = (e: any) => {};
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs.send(
+      "service_y8zh6xx",
+      "template_zuua04a",
+      {
+        from_name: form.name,
+        to_name: "Andy",
+        from_email: form.email,
+        to_email: "ramesy.richy@gmail.com",
+        message: form.message,
+      },
+      "RgIZTG5bdVIMPLmJO"
+    ).then(() => {
+      setLoading(false)
+      alert("thank you")
+      setForm({
+        name: "",
+        email: "",
+        message: ""
+      })
+    }).catch((error) => {
+      setLoading(false)
+      console.log("error:",error);
+      alert("Error")
+    })
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -80,8 +107,8 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <div className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]' >
-      <React/>
+      <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
+        <React />
         {/* <EarthCanvas /> */}
       </div>
     </div>

@@ -7,6 +7,12 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import react from "./react.svg";
+import vue from "./vue.svg";
+import flutter from "./flutter.svg"
+import node from "./node.svg";
+import emedia from "./emedia.png"
+
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -31,6 +37,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  react,
   logo,
   backend,
   creator,
@@ -59,4 +66,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  vue,
+  flutter,
+  node
 };
