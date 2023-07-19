@@ -1,0 +1,8 @@
+.skillContainer {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgb(145, 94, 240) 100%,
+    rgb(0, 212, 255) 100%
+  );
+}

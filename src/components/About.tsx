@@ -5,8 +5,9 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../motion";
 import { SectionWrapper } from "../hoc";
+import Skills from "./Skills";
 
-const ServiceCard = ({ index, title, icon }: any) => {
+const ServiceCard = ({ index, title, icon,level }: any) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
@@ -18,6 +19,7 @@ const ServiceCard = ({ index, title, icon }: any) => {
           <h3 className="text-white text-[20px] font-bold text-center">
             {title}
           </h3>
+          <Skills skillWidth={level}/>
         </div>
       </motion.div>
     </Tilt>
@@ -35,13 +37,13 @@ const About = () => {
         className="mt-4 text-secondary text-[17px]  leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+        <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           &emsp;Welcome to my portfolio. I'm thrilled to have you here , I'm a
-            <span className="text-[#915eff]"> Mobile & Web </span>developer
-            specializing in Flutter and JavaScript. I have a strong passion for
-            crafting captivating digital experiences that engage users on
-            multiple platforms.
-          </p>
+          <span className="text-[#915eff]"> Mobile & Web </span>developer
+          specializing in Flutter and JavaScript. I have a strong passion for
+          crafting captivating digital experiences that engage users on multiple
+          platforms.
+        </p>
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
