@@ -13,12 +13,11 @@ const ServiceCard = ({ index, title, icon }: any) => {
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full red-pink-gradient  rounded-[20px] shadow-card"
       >
-        <div
-        
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-        >
+        <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
           <img src={icon} alt={title} />
-          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
         </div>
       </motion.div>
     </Tilt>
@@ -33,13 +32,16 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
       <motion.p
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px]  leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, natus
-        commodi architecto modi veritatis pariatur consequatur saepe, dolorem
-        explicabo cum tempore ut at porro id excepturi debitis, nesciunt quidem.
-        Libero.
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          &emsp;Welcome to my portfolio. I'm thrilled to have you here , I'm a
+            <span className="text-[#915eff]"> Mobile & Web </span>developer
+            specializing in Flutter and JavaScript. I have a strong passion for
+            crafting captivating digital experiences that engage users on
+            multiple platforms.
+          </p>
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
@@ -50,4 +52,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about") ;
+export default SectionWrapper(About, "about");
