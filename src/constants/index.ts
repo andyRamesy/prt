@@ -48,19 +48,22 @@ const services = [
   {
     title: "React Developer",
     icon: react,
-    level: 90
+    level: 100
   },
   {
     title: "Vue Developer",
     icon: vue,
+    level: 100
   },
   {
     title: "Backend Developer",
     icon: node,
+    level: 90
   },
   {
     title: "Flutter",
     icon: flutter,
+    level: 90
   },
 ];
 
