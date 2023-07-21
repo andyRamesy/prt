@@ -9,15 +9,20 @@ import close from "./close.svg";
 
 import react from "./react.svg";
 import vue from "./vue.svg";
-import flutter from "./flutter.svg"
+import flutter from "./flutter.svg";
 import node from "./node.svg";
-import emedia from "./emedia.png"
+import hatDegree from "./hat.svg";
+import myagency from "./myAgency.svg";
+import html from "./tech/HTML.svg";
+import css from "./tech/css.svg";
 
-import css from "./tech/css.png";
+import emedia from "./emedia.png";
+
+// import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
-import html from "./tech/html.png";
+// import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
@@ -68,5 +73,7 @@ export {
   tripguide,
   vue,
   flutter,
-  node
+  node,
+  hatDegree,
+  myagency,
 };

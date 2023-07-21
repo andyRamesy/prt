@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from "../motion";
 import { SectionWrapper } from "../hoc";
 import Skills from "./Skills";
 
-const ServiceCard = ({ index, title, icon,level }: any) => {
+const ServiceCard = ({ index, title, icon, level }: any) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon,level }: any) => {
           <h3 className="text-white text-[20px] font-bold text-center">
             {title}
           </h3>
-          <Skills level={level} className="mt-5"/>
+          <Skills level={level} />
         </div>
       </motion.div>
     </Tilt>
@@ -45,8 +45,8 @@ const About = () => {
           platforms.
         </p>
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (          
+      <div className="mt-20 flex flex-wrap gap-10 xs:justify-center border rounded border-black py-[18px]">
+        {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>

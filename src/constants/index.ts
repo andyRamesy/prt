@@ -27,6 +27,8 @@ import {
   vue,
   flutter,
   node,
+  hatDegree,
+  myagency
 } from "../assets/index";
 
 export const navLinks = [
@@ -48,22 +50,22 @@ const services = [
   {
     title: "React Developer",
     icon: react,
-    level: 100
+    level: 100,
   },
   {
     title: "Vue Developer",
     icon: vue,
-    level: 100
+    level: 100,
   },
   {
     title: "Backend Developer",
     icon: node,
-    level: 90
+    level: 90,
   },
   {
     title: "Flutter",
     icon: flutter,
-    level: 90
+    level: 90,
   },
 ];
 
@@ -79,6 +81,10 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
+  },
+  {
+    name: "Flutter",
+    icon: flutter
   },
   {
     name: "TypeScript",
@@ -126,9 +132,9 @@ const experiences = [
   {
     title: "Restaurant Management System project",
     company_name: "License defense project",
-    icon: null,
+    icon: hatDegree,
     iconBg: "#383E56",
-    date: "March 2021 - April 2021",
+    date: "March 2021 - November 2021",
     // points: [
     //   "Developing and maintaining web applications using React.js and other related technologies.",
     //   "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -136,46 +142,32 @@ const experiences = [
     //   "Participating in code reviews and providing constructive feedback to other developers.",
     // ],
     points: [
-      "Developing mobile application using React Native for the front end and Node js as the back end",
+      "Developing mobile application using MERN stack (MongoDB, Express, React Native, Nodejs) for restaurant",
+      "The application is mainly a Restaurant POS (Point of Sale) System",
+      "This system streamlines the order-taking process, helps manage inventory, and facilitates efficient communication between the front-of-house staff (servers or waiters) and the back-of-house staff (chefs or kitchen staff)",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Internship Flutter Developer",
+    company_name: "ILO Madagascar",
+    icon: hatDegree,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "September 2021 - December 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Four months of internship in mobile development using flutter",
+      "In close collaboration with the lead mobile developer, the backend team, and the graphic designer, the mission was to integrate the mockups provided by the designer and the REST API provided by the backend team",
+      "The mission focused on integrating the designer's mockups and the backend's REST API, ensuring seamless communication between the frontend and backend teams.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Frontend Web Developer",
+    company_name: "MyAgency",
+    icon: myagency,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "March 2022 - till now",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop responsive user interfaces using Vue.js and Nuxt, working closely with designers and the backend team to integrate mockups, enhance functionalities, and optimize the user experience.",
+      "The responsibilities also include adding interactivity and dynamic features to the interfaces to enhance the overall functionality. Additionally, optimizing the user experience is a key focus, ensuring that the application is intuitive, efficient, and user-friendly. This collaboration between different teams is crucial to deliver a high-quality product that meets both design and functionality requirements",
     ],
   },
 ];
