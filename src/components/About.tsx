@@ -1,13 +1,14 @@
+import React, { useEffect, useState } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { services, techs } from "../constants";
 import { fadeIn, textVariant } from "../motion";
 import { SectionWrapper } from "../hoc";
 import Skills from "./Skills";
 
-const ServiceCard = ({ index, title, icon, level }: any) => {
+const ServiceCard = ({ index, title, icon, level, name }: any) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
@@ -15,9 +16,11 @@ const ServiceCard = ({ index, title, icon, level }: any) => {
         className="w-full red-pink-gradient  rounded-[20px] shadow-card"
       >
         <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-          <img src={icon} alt={title} />
+          {/* <p>{title}</p> */}
+
+          <img src={icon} alt={name} />
           <h3 className="text-white text-[20px] font-bold text-center">
-            {title}
+            {name}
           </h3>
           <Skills level={level} />
         </div>
@@ -27,6 +30,15 @@ const ServiceCard = ({ index, title, icon, level }: any) => {
 };
 
 const About = () => {
+  const [techno, setTechno] = useState(null);
+
+  useEffect(() => {
+    let techdata = techs.map(({ data }) => {
+      return data;
+    });
+    console.log("techno", techdata);
+    setTechno(techdata);
+  }, []);
   return (
     <>
       <motion.div variants={textVariant(1)}>
@@ -45,9 +57,20 @@ const About = () => {
           platforms.
         </p>
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10 xs:justify-center border rounded border-black py-[18px]">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+      <div className="mt-20 flex flex-wrap flex-row gap-10 xs:justify-center">
+        {techs.map((tech, index) => (
+          <>
+            <p>{tech.title}</p>
+            <div className="flex ">
+              {tech.data.map((techStack) => (
+                <ServiceCard
+                  key={techStack.name}
+                  index={index}
+                  {...techStack}
+                />
+              ))}
+            </div>
+          </>
         ))}
       </div>
     </>

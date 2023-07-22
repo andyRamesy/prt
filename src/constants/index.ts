@@ -28,7 +28,7 @@ import {
   flutter,
   node,
   hatDegree,
-  myagency
+  myagency,
 } from "../assets/index";
 
 export const navLinks = [
@@ -69,6 +69,58 @@ const services = [
   },
 ];
 
+const techs = [
+  { 
+    id: 0,
+    title:"Frontend",
+    data: [
+      {
+         id: 0,
+         name: "HTML 5",
+         icon: html,
+         level: 97
+      },
+      {
+        id: 1,
+        name: "CSS",
+        icon: css,
+        level:97
+      },
+      {
+        name: "React JS",
+        icon: reactjs,
+        level:95
+      },
+      {
+        name: "Redux Toolkit",
+        icon: redux,
+        level:95
+      },
+      {
+        name:"Tailwind",
+        icon:tailwind,
+        level:97
+      }
+    ]
+  },
+  {
+    id:1,
+    title:"Backend",
+    data:[
+      {
+        id:0,
+        name:"Nodejs",
+        icon:nodejs,
+      },
+      {
+        id:1,
+        name:"MongoDB",
+        icon:nodejs
+      }
+    ]
+  }
+];
+
 const technologies = [
   {
     name: "HTML 5",
@@ -84,7 +136,7 @@ const technologies = [
   },
   {
     name: "Flutter",
-    icon: flutter
+    icon: flutter,
   },
   {
     name: "TypeScript",
@@ -265,4 +317,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects,techs };
