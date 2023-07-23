@@ -29,6 +29,14 @@ import {
   node,
   hatDegree,
   myagency,
+  bootstrap,
+  scss,
+  nuxt,
+  nextjs,
+  mongo,
+  express,
+  sql,
+  firebase
 } from "../assets/index";
 
 export const navLinks = [
@@ -87,20 +95,45 @@ const techs = [
         level:97
       },
       {
+        name:"Tailwind",
+        icon:tailwind,
+        level:97
+      },
+      {
+        name:"Bootstrap",
+        icon:bootstrap,
+        level:97
+      },
+      {
+        name:"Scss",
+        icon:scss,
+        level:97
+      },
+      {
+        name:"Vue",
+        icon:vue,
+        level:99
+      },
+      {
+        name:"Nuxtjs",
+        icon:nuxt,
+        level:99
+      },
+      {
         name: "React JS",
         icon: reactjs,
         level:95
       },
       {
-        name: "Redux Toolkit",
-        icon: redux,
-        level:95
+        name:"Nextjs",
+        icon:nextjs,
+        level:99
       },
       {
-        name:"Tailwind",
-        icon:tailwind,
-        level:97
-      }
+        name:"Flutter",
+        icon:flutter,
+        level:90
+      },
     ]
   },
   {
@@ -115,7 +148,22 @@ const techs = [
       {
         id:1,
         name:"MongoDB",
-        icon:nodejs
+        icon:mongo
+      },
+      {
+        id:2,
+        name:"Express",
+        icon:express
+      },
+      {
+        id:3,
+        name:"SQL",
+        icon:sql
+      },
+      {
+        id:4,
+        name:"Firebase",
+        icon:firebase
       }
     ]
   }

@@ -16,8 +16,6 @@ const ServiceCard = ({ index, title, icon, level, name }: any) => {
         className="w-full red-pink-gradient  rounded-[20px] shadow-card"
       >
         <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-          {/* <p>{title}</p> */}
-
           <img src={icon} alt={name} />
           <h3 className="text-white text-[20px] font-bold text-center">
             {name}
@@ -30,15 +28,6 @@ const ServiceCard = ({ index, title, icon, level, name }: any) => {
 };
 
 const About = () => {
-  const [techno, setTechno] = useState(null);
-
-  useEffect(() => {
-    let techdata = techs.map(({ data }) => {
-      return data;
-    });
-    console.log("techno", techdata);
-    setTechno(techdata);
-  }, []);
   return (
     <>
       <motion.div variants={textVariant(1)}>
@@ -57,11 +46,11 @@ const About = () => {
           platforms.
         </p>
       </motion.p>
-      <div className="mt-20 flex flex-wrap flex-row gap-10 xs:justify-center">
+      <div className="mt-20 flex flex-wrap flex-col gap-10 xs:justify-center">
         {techs.map((tech, index) => (
           <>
-            <p>{tech.title}</p>
-            <div className="flex ">
+            <h1 className={`${styles.heroSubText} text-secondary`}>{tech.title}</h1>
+            <div className="flex flex-wrap gap-4">
               {tech.data.map((techStack) => (
                 <ServiceCard
                   key={techStack.name}
