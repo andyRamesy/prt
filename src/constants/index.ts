@@ -1,32 +1,11 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
   html,
   css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   react,
   vue,
   flutter,
-  node,
+  nodejs,
   hatDegree,
   myagency,
   bootstrap,
@@ -36,7 +15,8 @@ import {
   mongo,
   express,
   sql,
-  firebase
+  firebase,
+  tailwind
 } from "../assets/index";
 
 export const navLinks = [
@@ -67,7 +47,7 @@ const services = [
   },
   {
     title: "Backend Developer",
-    icon: node,
+    icon: nodejs,
     level: 90,
   },
   {
@@ -96,7 +76,7 @@ const techs = [
       },
       {
         name:"Tailwind",
-        icon:tailwind,
+        icon:null,
         level:97
       },
       {
@@ -121,7 +101,7 @@ const techs = [
       },
       {
         name: "React JS",
-        icon: reactjs,
+        icon: null,
         level:95
       },
       {
@@ -143,7 +123,7 @@ const techs = [
       {
         id:0,
         name:"Nodejs",
-        icon:nodejs,
+        icon:null,
       },
       {
         id:1,
@@ -180,7 +160,7 @@ const technologies = [
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: null,
   },
   {
     name: "Flutter",
@@ -188,27 +168,27 @@ const technologies = [
   },
   {
     name: "TypeScript",
-    icon: typescript,
+    icon: null,
   },
   {
     name: "React JS",
-    icon: reactjs,
+    icon: null,
   },
   {
     name: "Redux Toolkit",
-    icon: redux,
+    icon: null,
   },
   {
     name: "Tailwind CSS",
-    icon: tailwind,
+    icon: null,
   },
   {
     name: "Node JS",
-    icon: nodejs,
+    icon: null,
   },
   {
     name: "MongoDB",
-    icon: mongodb,
+    icon: null,
   },
   {
     name: "Three JS",
@@ -216,15 +196,15 @@ const technologies = [
   },
   {
     name: "git",
-    icon: git,
+    icon: null,
   },
   {
     name: "figma",
-    icon: figma,
+    icon: null,
   },
   {
     name: "docker",
-    icon: docker,
+    icon: null,
   },
 ];
 
@@ -318,7 +298,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: null,
     source_code_link: "https://github.com/",
   },
   {
@@ -339,7 +319,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: null,
     source_code_link: "https://github.com/",
   },
   {
@@ -360,7 +340,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: null,
     source_code_link: "https://github.com/",
   },
 ];
