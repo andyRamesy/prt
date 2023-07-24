@@ -2,11 +2,11 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
+  // Feedbacks,
   Hero,
   Navbar,
-  Tech,
-  Works,
+  // Tech,
+  // Works,
   StarsCanvas,
 } from "./components";
 import { BrowserRouter } from "react-router-dom";

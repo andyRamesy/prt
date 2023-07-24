@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services, techs } from "../constants";
+import { techs } from "../constants";
 import { fadeIn, textVariant } from "../motion";
 import { SectionWrapper } from "../hoc";
 import Skills from "./Skills";

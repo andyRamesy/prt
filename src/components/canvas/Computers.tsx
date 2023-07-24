@@ -1,3 +1,4 @@
+// @ts-ignore
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
@@ -9,7 +10,7 @@ const Computers = ({ isMobile }: any) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
+      <hemisphereLight intensity={0.15}  groundColor="black" />
       <pointLight intensity={0.2} />
       <spotLight
         position={[-20, 50, 10]}
@@ -46,7 +47,7 @@ const ComputersCanvas = () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
-  
+
   return (
     <Canvas
       frameloop="demand"
