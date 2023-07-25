@@ -18,11 +18,11 @@ import  mongo from "./tech/mongodb.svg"
 import express from "./tech/express.svg"
 import sql from "./tech/sql.svg"
 import firebase from "./tech/firebase.svg"
-// import tailwind from "./tech/ta"
 import threejs from "./tech/threejs.svg";
-
+import rightArrow from "./rightArrow.svg"
 
 export {
+  rightArrow,
   react,
   logo,
   menu,

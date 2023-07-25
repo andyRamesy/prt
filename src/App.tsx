@@ -8,38 +8,30 @@ import {
   // Tech,
   // Works,
   StarsCanvas,
-  NextPrev
+  NextPrev,
 } from "./components";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import Router from "./routes/routes";
+import { useState } from "react";
 
 const App = () => {
+  const [step, setStep] = useState(1);
+  const nextPage = () => {
+    setStep(1 + step);
+    console.log(step);
+  };
+
   return (
-    // <BrowserRouter>
-    //   <div className="relative z-0 bg-primary">
-    //     <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-    //       <Navbar />
-    //       {/* <Router /> */}
-    //       <Welcome />
-    //     </div>  
-    //     <About />
-    //     <Experience />
-    //     {/* <Tech /> */}
-    //     {/* <Works /> */}
-    //     {/* <Feedbacks /> */}
-    //     <div className="realative z-0">
-    //       <Contact />
-    //       <StarsCanvas />
-    //     </div>
-    //   </div>
-    // </BrowserRouter>
     <BrowserRouter>
-        <Navbar />
-        <Router />
-        <NextPrev />
-        <StarsCanvas />
-  </BrowserRouter>
+      <Navbar />
+      {step === 1 && <Welcome />}
+      {step === 2 && <About />}
+      <NextPrev nextPage={nextPage} />
+      {}
+      {/* <Router /> */}
+      <StarsCanvas />
+    </BrowserRouter>
   );
 };
 

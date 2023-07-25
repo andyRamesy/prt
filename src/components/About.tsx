@@ -45,7 +45,7 @@ const About = () => {
           platforms.
         </p>
       </motion.p>
-      <div className="mt-20 flex flex-wrap flex-col gap-10 xs:justify-center">
+      {/* <div className="mt-20 flex flex-wrap flex-col gap-10 xs:justify-center">
         {techs.map((tech, index) => (
           <>
             <h1 className={`${styles.heroSubText} text-secondary`}>{tech.title}</h1>
@@ -60,7 +60,7 @@ const About = () => {
             </div>
           </>
         ))}
-      </div>
+      </div> */}
     </>
   );
 };
