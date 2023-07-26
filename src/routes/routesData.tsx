@@ -1,5 +1,3 @@
-// import  from "../components/Hero"
-// import  from "../components/About"
 import { Key, ReactNode } from "react";
 import { Welcome, About, Experience, Contact } from "../components";
 
