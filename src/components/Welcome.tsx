@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import Typewriter from "typewriter-effect";
-import { user,mail,contact } from "../assets/index";
+import { user,mail,contact,about } from "../assets/index";
 import "./styles/WelcomeStyle.css"
 import { Link } from "react-router-dom";
 const Welcome = () => {
@@ -23,17 +23,18 @@ const Welcome = () => {
             />
           </h1>
         {/* </div> */}
-        <div className="flex gap-[5px] my-[10px] btn">
-          <img src={contact} alt="" className="max-w-[75px]"/>
-          <Link to="/contact">Contact me</Link>
-        </div>
-        <div className="absolute bottom-[10px]">
+        <Link to="/about" className="flex gap-[5px] my-[10px] btn">
+          <img src={about} alt="" className="max-w-[75px]"/>
+          Want to know about me
+          {/* <Link  >Contact me</Link> */}
+        </Link>
+        {/* <div className="absolute bottom-[10px]">
           <img
             src={user}
             alt="Me"
             className="max-w-[400px] h-max-[300px] object-contain"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

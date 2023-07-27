@@ -2,9 +2,9 @@
   font-weight: 500;
   font-size: 18px;
   /* color: #fff; */
-  background-color: #367087;
+  /* background-color: #367087; */
   padding: 10px 30px;
-  /* border: solid #00000000 1px; */
+  border:  #ececec 1px;
   /* box-shadow: rgb(144, 192, 252) 5px 5px 25px 5px; */
   border-radius: 3px;
   transition: 876ms;
@@ -23,4 +23,9 @@
   text-decoration: underline;
   /* color: #0066cc; */
   /* border: solid 1px #0066cc; */
+}
+
+.btn:active{
+  background-color: #272631;
+  transition: 1ms;
 }
