@@ -28,10 +28,9 @@ const ServiceCard = ({ index, title, icon, level, name }: any) => {
 
 const About = () => {
   return (
-    <>
+    <div className="my-[20px]">
       <motion.div variants={textVariant(1)}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>About me.</h2>
       </motion.div>
       <motion.p
         className="mt-4 text-secondary text-[17px]  leading-[30px]"
@@ -45,23 +44,7 @@ const About = () => {
           platforms.
         </span>
       </motion.p>
-      {/* <div className="mt-20 flex flex-wrap flex-col gap-10 xs:justify-center">
-        {techs.map((tech, index) => (
-          <>
-            <h1 className={`${styles.heroSubText} text-secondary`}>{tech.title}</h1>
-            <div className="flex flex-wrap gap-4">
-              {tech.data.map((techStack) => (
-                <ServiceCard
-                  key={techStack.name}
-                  index={index}
-                  {...techStack}
-                />
-              ))}
-            </div>
-          </>
-        ))}
-      </div> */}
-    </>
+    </div>
   );
 };
 

@@ -29,11 +29,9 @@ const Navbar = () => {
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
-          {/* <Link to="/about">
-            <p>About</p>
-          </Link> */}
           {navLinks.map((link) => (
             <Link
+              key={link.id}
               to={`/${link.id}`}
               className={`${
                 active === link.title ? "text-white" : "text-secondary"

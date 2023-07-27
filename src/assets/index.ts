@@ -20,7 +20,11 @@ import sql from "./tech/sql.svg"
 import firebase from "./tech/firebase.svg"
 import threejs from "./tech/threejs.svg";
 import user from "./user.svg"
+import mail from "./mail.svg"
+import contact from "./contact.svg"
 export {
+  contact,
+  mail,
   user,
   react,
   logo,
