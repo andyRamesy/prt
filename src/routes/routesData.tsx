@@ -17,19 +17,19 @@ const pageData: IRouteData[] = [
   },
   {
     key: 1,
-    path: "/about",
+    path: "about",
     component: <About />,
     title: "about",
   },
   {
     key: 2,
-    path: "/experience",
+    path: "experience",
     component: <Experience />,
     title: "experience",
   },
   {
     key: 3,
-    path: "/contact",
+    path: "contact",
     component: <Contact />,
     title: "contact",
   },

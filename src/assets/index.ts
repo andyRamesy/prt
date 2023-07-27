@@ -19,10 +19,9 @@ import express from "./tech/express.svg"
 import sql from "./tech/sql.svg"
 import firebase from "./tech/firebase.svg"
 import threejs from "./tech/threejs.svg";
-import rightArrow from "./rightArrow.svg"
-
+import user from "./user.svg"
 export {
-  rightArrow,
+  user,
   react,
   logo,
   menu,

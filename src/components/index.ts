@@ -5,9 +5,7 @@ import About from "./About";
 import Experience from "./Experience";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
-import NextPrev from "./NextPrev";
 export {
-  NextPrev,
   Welcome,
   Navbar,
   About,

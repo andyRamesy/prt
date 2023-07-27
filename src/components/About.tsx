@@ -37,13 +37,13 @@ const About = () => {
         className="mt-4 text-secondary text-[17px]  leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+        <span className={`${styles.heroSubText} mt-2 text-white-100`}>
           &emsp;Welcome to my portfolio. I'm thrilled to have you here , I'm a
           <span className="text-[#915eff]"> Mobile & Web </span>developer
           specializing in Flutter and JavaScript. I have a strong passion for
           crafting captivating digital experiences that engage users on multiple
           platforms.
-        </p>
+        </span>
       </motion.p>
       {/* <div className="mt-20 flex flex-wrap flex-col gap-10 xs:justify-center">
         {techs.map((tech, index) => (

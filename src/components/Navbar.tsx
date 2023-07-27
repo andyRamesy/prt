@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -27,17 +27,21 @@ const Navbar = () => {
             <span className="sm:block hidden">Mobile | Web Developer</span>
           </p>
         </Link>
+
         <ul className="list-none hidden sm:flex flex-row gap-10">
+          {/* <Link to="/about">
+            <p>About</p>
+          </Link> */}
           {navLinks.map((link) => (
-            <li
-              key={link.id}
+            <Link
+              to={`/${link.id}`}
               className={`${
                 active === link.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium first-letter:cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`${link.id}`}>{link.title}</a>
-            </li>
+              <span>{link.title}</span>
+            </Link>
           ))}
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -64,7 +68,7 @@ const Navbar = () => {
                     setActive(link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <Link to={`#${link.id}`}>{link.title}</Link>
                 </li>
               ))}
             </ul>
