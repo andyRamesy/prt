@@ -8,6 +8,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { AnimatedLayout } from "./index";
 
 const ExperienceCard = ({ experience }: any) => (
   <VerticalTimelineElement
@@ -48,7 +49,7 @@ const ExperienceCard = ({ experience }: any) => (
 
 const Experience = () => {
   return (
-    <>
+    <AnimatedLayout>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I have done so far</p>
         <h2 className={styles.sectionHeadText}>XP.</h2>
@@ -60,7 +61,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </AnimatedLayout>
   );
 };
 

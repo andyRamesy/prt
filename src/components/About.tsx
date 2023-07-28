@@ -6,6 +6,8 @@ import { techs } from "../constants";
 import { fadeIn, textVariant } from "../motion";
 import { SectionWrapper } from "../hoc";
 import Skills from "./Skills";
+import { contact } from "../assets/index";
+import { AnimatedLayout, Button } from "./index";
 
 const ServiceCard = ({ index, title, icon, level, name }: any) => {
   return (
@@ -28,23 +30,30 @@ const ServiceCard = ({ index, title, icon, level, name }: any) => {
 
 const About = () => {
   return (
-    <div className="my-[20px]">
-      <motion.div variants={textVariant(1)}>
-        <h2 className={styles.sectionHeadText}>About me.</h2>
-      </motion.div>
-      <motion.p
-        className="mt-4 text-secondary text-[17px]  leading-[30px]"
-        variants={fadeIn("", "", 0.1, 1)}
-      >
-        <span className={`${styles.heroSubText} mt-2 text-white-100`}>
-          &emsp;Welcome to my portfolio. I'm thrilled to have you here , I'm a
-          <span className="text-[#915eff]"> Mobile & Web </span>developer
-          specializing in Flutter and JavaScript. I have a strong passion for
-          crafting captivating digital experiences that engage users on multiple
-          platforms.
-        </span>
-      </motion.p>
-    </div>
+    <AnimatedLayout>
+      <div className="my-[20px]">
+        <motion.div variants={textVariant(1)}>
+          <h2 className={styles.sectionHeadText}>About me.</h2>
+        </motion.div>
+        <motion.p
+          className="mt-4 text-secondary text-[17px]  leading-[2.5rem] md:leading-[3rem] lg:leading-[4rem]"
+          variants={fadeIn("", "", 0.1, 1)}
+        >
+          <span
+            className={`${styles.heroSubText} mt-2 text-white-100 tracking-widest`}
+          >
+            &emsp;Welcome to my portfolio. I'm thrilled to have you here , I'm a
+            <span className="text-[#915eff]"> Mobile & Web </span>developer
+            specializing in Flutter and JavaScript. I have a strong passion for
+            crafting captivating digital experiences that engage users on
+            multiple platforms.
+          </span>
+        </motion.p>
+        <div className="absolute right-[10px] bottom-[-20vh]">
+          <Button text="Contact me" direction="/contact" imageLink={contact} />
+        </div>
+      </div>
+    </AnimatedLayout>
   );
 };
 
