@@ -49,7 +49,7 @@ const About = () => {
             multiple platforms.
           </span>
         </motion.p>
-        <div className="absolute right-[10px] bottom-[-20vh]">
+        <div className="absolute right-[10px] bottom-[-20vh] z-[1000]">
           <Button text="Contact me" direction="/contact" imageLink={contact} />
         </div>
       </div>
