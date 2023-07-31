@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed z-20 opacity-2`}
+      className={`${styles.paddingX} w-full flex items-center py-5 sticky z-20 opacity-2 mx-auto`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link

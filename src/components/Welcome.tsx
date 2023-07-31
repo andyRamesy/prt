@@ -13,7 +13,7 @@ const Welcome = () => {
     <AnimatedLayout>
       <section className="flex relative w-full h-screen mx-auto">
         <div
-          className={`${styles.paddingX} mt-[120px] inset-0 top-[120px] max-w-7xl mx-auto flex flex-col  items-center gap-5`}
+          className={`${styles.paddingX}  inset-0 top-[120px] max-w-7xl mx-auto flex flex-col  items-center gap-5`}
         >
           <h1 className={`${styles.heroHeadText} text-white h-[200px]`}>
             <Typewriter

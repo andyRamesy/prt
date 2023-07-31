@@ -12,22 +12,20 @@ import "./index.css";
 import Router from "./routes/routes";
 import { useState } from "react";
 import AnimatedLayout from "./components/AnimatedLayout";
+import MainLayout from "./components/MainLayout";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <AnimatePresence>
-        {/*<AnimatedLayout> */}
-        <Routes>
+      <MainLayout>
+        {/* <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
-        </Routes>
-        {/* </AnimatedLayout>*/}
-        //{" "}
-      </AnimatePresence>
+        </Routes> */}
+      </MainLayout>
       <StarsCanvas />
     </>
   );
