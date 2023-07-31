@@ -57,10 +57,10 @@ const Contact = () => {
 
   return (
     <AnimatedLayout>
-      <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+      <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10">
         <div
           // variants={slideIn("left", "tween", 0.2, 1)}
-          className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+          className="bg-transparent rounded-md border border-[#292831] p-8 w-full"
         >
           <p className={styles.sectionSubText}>Get in touch</p>
           <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -110,9 +110,9 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
+        {/* <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
           <React />
-        </div>
+        </div> */}
       </div>
     </AnimatedLayout>
   );

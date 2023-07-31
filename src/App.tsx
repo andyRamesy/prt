@@ -19,12 +19,12 @@ const App = () => {
     <>
       <Navbar />
       <MainLayout>
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
-        </Routes> */}
+        </Routes>
       </MainLayout>
       <StarsCanvas />
     </>

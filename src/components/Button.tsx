@@ -11,7 +11,7 @@ const Button = ({ imageLink, direction,text }: IBtn) => {
   return (
     <Link
       to={`${direction}`}
-      className="flex gap-[5px] w-fit m-auto btn border-[#6c697d] border-solid z-[20]"
+      className="flex gap-[5px] w-fit m-auto btn border-[#6c697d] border-solid"
     >
       <img src={imageLink} alt="" className="max-w-[75px]" />
       <span className="sm:text-sm">{text}</span>
