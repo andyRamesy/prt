@@ -57,40 +57,40 @@ const Contact = () => {
 
   return (
     <AnimatedLayout>
-      <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10">
+      <div className="flex-col-reverse flex  items-center gap-10 w-full">
         <div
-          // variants={slideIn("left", "tween", 0.2, 1)}
-          className="bg-transparent rounded-md border border-[#292831] p-8 w-full"
+          className="bg-transparent rounded-md border border-[#292831] p-8"
         >
-          <p className={styles.sectionSubText}>Get in touch</p>
-          <h3 className={styles.sectionHeadText}>Contact.</h3>
+          <p className={styles.sectionSubText}>Contact me</p>
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12 flex flex-col gap-8"
+            className="mt-4 flex flex-col gap-8"
           >
-            <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your name</span>
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder="write your name"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-              />
-            </label>
-            <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your email</span>
-              <input
-                type="text"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="mail@mail.com"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-              />
-            </label>
+            <div className="flex flex-row justify-start gap-[20px]">
+              <label className="flex flex-col">
+                <span className="text-white font-medium mb-4">Your name</span>
+                <input
+                  type="text"
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="write your name"
+                  className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium w-full"
+                />
+              </label>
+              <label className="flex flex-col">
+                <span className="text-white font-medium mb-4">Your email</span>
+                <input
+                  type="text"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder="mail@mail.com"
+                  className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                />
+              </label>
+            </div>
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Your message</span>
               <textarea
@@ -99,7 +99,7 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="Say what you want"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none border-none font-medium"
               />
             </label>
             <button
@@ -118,4 +118,4 @@ const Contact = () => {
   );
 };
 
-export default Contact
+export default Contact;
