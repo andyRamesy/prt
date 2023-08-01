@@ -65,18 +65,26 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-4 flex flex-col gap-8"
+            className="mt-4 flex flex-col gap-8 w-[75vw] md:w-full"
           >
-            <div className="flex flex-row justify-start gap-[20px]">
+            <div className="flex flex-col justify-start gap-[20px] md:flex-row ">
               <label className="flex flex-col">
                 <span className="text-white font-medium mb-4">Your name</span>
-                <input
+                {/* <input
                   type="text"
                   name="name"
                   value={form.name}
                   onChange={handleChange}
                   placeholder="write your name"
-                  className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium w-full"
+                  className="bg-transparent py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium w-full"
+                /> */}
+                 <input
+                  type="text"
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="write your name"
+                  className="bg-transparent py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium w-full"
                 />
               </label>
               <label className="flex flex-col">
@@ -112,7 +120,8 @@ const Contact = () => {
         </div>
         {/* <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
           <React />
-        </div> */}
+        </div> 
+        */}
       </div>
     </AnimatedLayout>
   );
