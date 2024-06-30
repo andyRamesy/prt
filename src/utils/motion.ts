@@ -61,6 +61,7 @@ export const textVariant = (delay?:number) => {
       },
     };
   };
+
   
   export const slideIn = (direction:any, type:any, delay:any, duration:any) => {
     return {

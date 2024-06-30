@@ -22,19 +22,20 @@ const Welcome = () => {
                   "Hello world, my name is <em class='text-red-500'><strong> Andy Ramesy</strong></em>",
                 autoStart: true,
                 skipAddStyles: true,
-                
+
               }}
             />
           </h1>
-          <div className="mt-[4rem ]">
-            <Button
-              text="Want to know about me"
-              direction="/about"
-              imageLink={about}
-            />
-          </div>
+
         </div>
       </section>
+      <div className="mt-[4rem ]">
+        <Button
+          text="Want to know about me"
+          direction="/about"
+          imageLink={about}
+        />
+      </div>
     </AnimatedLayout>
   );
 };

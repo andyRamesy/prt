@@ -6,12 +6,8 @@ import {
   Navbar,
   StarsCanvas,
 } from "./components";
-import { AnimatePresence } from "framer-motion";
-import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import {Route, Routes } from "react-router-dom";
 import "./index.css";
-import Router from "./routes/routes";
-import { useState } from "react";
-import AnimatedLayout from "./components/AnimatedLayout";
 import MainLayout from "./components/MainLayout";
 
 const App = () => {
