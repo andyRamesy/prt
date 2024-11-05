@@ -1,18 +1,36 @@
 import React, { MouseEventHandler, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
-import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 import "./styles/NavStyleMobile.css";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Fade from "@mui/material/Fade";
+import i18n from "../i18n";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
+  const { t } = useTranslation();
+
+  const navLinks = [
+    {
+      id: "about",
+      title: t("nav.about"),
+    },
+    {
+      id: "experience",
+      title: t("nav.xp"),
+    },
+    {
+      id: "contact",
+      title: t("nav.contact")
+    },
+  ];
+
   const handleClick = (event: any) => {
     setAnchorEl(event.currentTarget);
   };
@@ -37,7 +55,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="flex text-white text-[18px] font-bold cursor-pointer">
             Andy Ramesy &nbsp;
-            <span className="sm:block hidden">Mobile | Web Developer</span>
+            <span className="sm:block hidden">{t("jobTitle")}</span>
           </p>
         </Link>
 
@@ -73,10 +91,7 @@ const Navbar = () => {
           >
             {navLinks.map((link) => (
               <MenuItem onClick={handleClose}>
-                <Link
-                  key={link.id}
-                  to={`/${link.id}`}
-                >
+                <Link key={link.id} to={`/${link.id}`}>
                   <span className="text-white">{link.title}</span>
                 </Link>
               </MenuItem>

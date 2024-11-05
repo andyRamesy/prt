@@ -7,31 +7,31 @@ import "./styles/WelcomeStyle.css";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import { AnimatedLayout } from "./index";
+import { useTranslation } from "react-i18next";
 
 const Welcome = () => {
+  const { t } = useTranslation();
+
   return (
     <AnimatedLayout>
-      <section className="flex w-full mx-auto">
+      <section className="flex w-full mx-auto my-[5rem]">
         <div
           className={` inset-0 w-full  max-w-7xl  flex flex-col  items-center gap-5`}
         >
           <h1 className={`${styles.heroHeadText} text-white h-[200px]`}>
             <Typewriter
               options={{
-                strings:
-                  "Hello world, my name is <em class='text-red-500'><strong> Andy Ramesy</strong></em>",
+                strings: t("welcome"),
                 autoStart: true,
                 skipAddStyles: true,
-
               }}
             />
           </h1>
-
         </div>
       </section>
       <div className="mt-[4rem ]">
         <Button
-          text="Want to know about me"
+          text={t("knowMe")}
           direction="/about"
           imageLink={about}
         />

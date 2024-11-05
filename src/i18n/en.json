@@ -1,0 +1,10 @@
+{
+    "welcome" : "Hello world, my name is <em class='text-red-500'><strong> Andy Ramesy</strong></em>",
+    "knowMe" : "Want to know about me",
+    "jobTitle" : "Mobile | Web Developer",
+    "nav":{
+        "about" : "About",
+        "xp" : "Experience",
+        "contact" : "Contact"
+    }
+}
