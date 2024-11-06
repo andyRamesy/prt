@@ -7,7 +7,7 @@ import "./styles/WelcomeStyle.css";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import { AnimatedLayout } from "./index";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const Welcome = () => {
   const { t } = useTranslation();
@@ -16,25 +16,23 @@ const Welcome = () => {
     <AnimatedLayout>
       <section className="flex w-full mx-auto my-[5rem]">
         <div
-          className={` inset-0 w-full  max-w-7xl  flex flex-col  items-center gap-5`}
+          className={` inset-0 w-full max-w-7xl flex flex-col items-center gap-5`}
         >
-          <h1 className={`${styles.heroHeadText} text-white h-[200px]`}>
-            <Typewriter
-              options={{
-                strings: t("welcome"),
-                autoStart: true,
-                skipAddStyles: true,
-              }}
-            />
-          </h1>
+          <Trans>
+            <h1 className={`${styles.heroHeadText} text-white h-[200px]`} >
+              <Typewriter
+                options={{
+                  strings: [t("welcome")],
+                  autoStart: true,
+                  skipAddStyles: true,
+                }}
+              />
+            </h1>
+          </Trans>
         </div>
       </section>
       <div className="mt-[4rem ]">
-        <Button
-          text={t("knowMe")}
-          direction="/about"
-          imageLink={about}
-        />
+        <Button text={t("knowMe")} direction="/about" imageLink={about} />
       </div>
     </AnimatedLayout>
   );

@@ -1,5 +1,5 @@
 {
-    "welcome" : "Hello world, my name is <em class='text-red-500'><strong> Andy Ramesy</strong></em>",
+    "welcome" : "Hello world, my name is <strong class={'text-red-500'}> Andy Ramesy</strong>",
     "knowMe" : "Want to know about me",
     "jobTitle" : "Mobile | Web Developer",
     "nav":{
