@@ -4,7 +4,6 @@ import { ComputersCanvas } from "./canvas";
 import Typewriter from "typewriter-effect";
 import { user, mail, contact, about } from "../assets/index";
 import "./styles/WelcomeStyle.css";
-import { Link } from "react-router-dom";
 import Button from "./Button";
 import { AnimatedLayout } from "./index";
 import { Trans, useTranslation } from "react-i18next";
@@ -22,9 +21,9 @@ const Welcome = () => {
             <h1 className={`${styles.heroHeadText} text-white h-[200px]`} >
               <Typewriter
                 options={{
-                  strings: [t("welcome")],
+                  strings: t("welcome") ,
                   autoStart: true,
-                  skipAddStyles: true,
+                  skipAddStyles: false,
                 }}
               />
             </h1>

@@ -6,5 +6,7 @@
         "about" : "About",
         "xp" : "Experience",
         "contact" : "Contact"
-    }
+    },
+    "aboutMe": "About me",
+    "aboutMeParagraph": "Welcome to my portfolio. I'm thrilled to have you here"
 }
